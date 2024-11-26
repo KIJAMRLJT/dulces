@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DULCES GABY</title>
+</head>
+<body>
+    <form method="POST" action="login1.jsp" name="forms">
+        <label type="operation">Usuario</label><br>
+        <input type="text" name="usuario"><br>
+        <label type="operation">Password</label><br>
+        <input type="password" name="password"><br>
+        <input type="button"onclick="funcion()" value="Aceptar" ">
+    </body>
+</html>
+<script>
+function funcion(){
+    if(document.forms.usuario.value==""){
+   alert("el campo de usuario esta vacio");
+   document.forms.usuario.focus();
+   return;
+    }
+if(document.forms.password.value==""){
+   alert("el campo de contraseña esta vacio");
+   document.forms.password.focus();
+   return;
+    }
+document.forms.submit();
+}
+
+</script>
